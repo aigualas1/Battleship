@@ -156,7 +156,7 @@ while (
 
     # Reference: https://www.w3schools.com/python/python_strings.asp
     elif "Ship" in computer_grid[player_choice_1][player_choice_2]:
-        # Inform player when a computer ship is destroyed
+        # Inform  a player when a computer ship is destroyed
         print(
             f"Direct hit! The computer's {computer_grid[player_choice_1][player_choice_2]} has been destroyed!"
         )
@@ -192,7 +192,10 @@ while (
     print(pc_x_coordinate, pc_y_coordinate)
 
     # Ensure the computer guesses something it hasn't guessed yet
-    while [alphabet[pc_x_coordinate], pc_y_coordinate + 1] in computer_hit_list or [alphabet[pc_x_coordinate], pc_y_coordinate + 1] in computer_miss_list:
+    while [alphabet[pc_x_coordinate], pc_y_coordinate + 1] in computer_hit_list or [
+        alphabet[pc_x_coordinate],
+        pc_y_coordinate + 1,
+    ] in computer_miss_list:
         pc_x_coordinate = random.randint(0, player_grid_choice - 1)
         pc_y_coordinate = random.randint(0, player_grid_choice - 1)
         print(computer_miss_list)
