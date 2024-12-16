@@ -1,0 +1,51 @@
+# Byte-compiled files
+*.py[cod]
+__pycache__/
+*.so
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.wheel
+
+# Logs
+*.log
+*.out
+*.err
+logs/
+
+# Django / Flask specific
+*.sqlite3
+*.db
+
+# Environment variables
+.env
+.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.tox/
+coverage/
+.coverage
+*.cover
+.hypothesis/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
